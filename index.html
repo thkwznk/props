@@ -3,67 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <title>title</title>
-    <style>
-      body {
-        background-color: #fff5e9;
-        margin: 0;
-      }
-
-      .container {
-        max-width: 968px;
-        padding: 4em;
-        margin: auto;
-      }
-
-      .container > p {
-        text-align: justify;
-        font-size: 3em;
-        font-family: "Times New Roman", Times, serif;
-        color: #111;
-        font-style: italic;
-        text-indent: 2em;
-      }
-
-      audio {
-        position: absolute;
-        left: 2em;
-        bottom: 2em;
-        width: calc(100vw - 4em);
-      }
-
-      audio::-webkit-media-controls-enclosure {
-        background-color: #d9bda8;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <p>
-        Jest rok 1897. Profesor Howard, kontrowersyjny nauczyciel eliksirów,
-        zniknął w niewyjaśnionych okolicznościach. Po sobie pozostawił jedynie
-        zniszczone laboratorium, stertę notatek… i <b>stary dziennik</b>.
+      <p style="text-indent: 0">Rok 1897</p>
+      <p style="text-indent: 2em">
+        Pod ruinami jednej z najstarszych komnat Szkoły Strachu, odnaleziono coś
+        niezwykłego — <b>dziennik</b>. Jedyny przedmiot, który przetrwał wybuch,
+        który wydarzył się jakiś miesiąc temu i zniszczył nielegalne
+        laboratorium ukryte głęboko w lochach akademii.
       </p>
       <p>
-        Nieliczni uczniowie wiedzieli, że profesor nie prowadził zwykłych zajęć.
-        Twierdził, że granica między nauką a magią to iluzja — a tylko odważni
-        mają prawo ją przekroczyć. W swoim dzienniku opisał pięć eksperymentów.
-        Każdy z nich kryje jedną z cyfr do zamkniętej walizki. Walizki, w której
-        — według legend — ukrył zakazane eliksiry stworzone poza wiedzą
-        Ministerstwa.
+        Właścicielem był profesor <b>H. Howard — nauczyciel eliksirów</b>,
+        którego imię zniknęło z ksiąg jeszcze zanim zapadł się pod ziemię.
+        Oficjalnie? Uznany za zmarłego. Nieoficjalnie? Zbyt wielu twierdziło, że
+        był bliski odkrycia czegoś, czego nie powinien był nawet dotknąć.
       </p>
       <p>
-        Waszym zadaniem jest odnaleźć te liczby. Ale pamiętajcie… tylko ci,
-        którzy zrozumieją prawdziwe intencje profesora, dotrą do końca. Uważnie
-        czytajcie dziennik. Wsłuchujcie się w to, co mówi… lub czego nie mówi
-        wcale.
+        Badania nad pradawnymi demonami, eksperymenty na uczniach, otwieranie
+        wrót, które miały pozostać zamknięte. Co tak naprawdę wydarzyło się
+        tamtej nocy? I czemu dziennik… przetrwał? Niektórzy twierdzą, że to nie
+        notes, lecz mapa. Inni — że klucz. Do czego? Nikt jeszcze nie miał
+        odwagi iść do końca. Do teraz…
       </p>
     </div>
+
     <audio
       controls
+      id="audio"
       preload="auto"
       controlslist="nodownload nofullscreen noremoteplayback"
-      src="audio.mp3"
-      autoplay
+      src="audio/wprowadzenie.mp3"
     ></audio>
   </body>
 </html>

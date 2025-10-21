@@ -1,0 +1,44 @@
+body {
+  background-color: #fff5e9;
+  margin: 0;
+}
+
+.container {
+  max-width: 968px;
+  padding: 4em;
+  margin: auto;
+}
+
+.container > p {
+  text-align: justify;
+  font-size: 3em;
+  font-family: "Times New Roman", Times, serif;
+  color: #111;
+  font-style: italic;
+  
+}
+
+.container > p:first-of-type {
+  text-indent: 2em;
+}
+
+.container > p:last-child {
+  margin-bottom: 3em;
+}
+
+audio {
+  width: calc(50% - 2em);
+  left: 2em;
+  bottom: 4em;
+  position: fixed;
+  transform-origin: left;
+  scale: 200%;
+}
+
+audio::-webkit-media-controls-enclosure {
+  background-color: #d9bda8;
+}
+
+b {
+  color: #c65900;
+}
