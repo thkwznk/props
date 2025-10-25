@@ -4,9 +4,14 @@ body {
 }
 
 .container {
+  opacity: 0;
+  visibility: hidden;
+
   max-width: 968px;
   padding: 4em;
   margin: auto;
+
+  transition: opacity 1s ease-in, visibility 0ms ease-in 1s;
 }
 
 .container > p {
@@ -15,24 +20,27 @@ body {
   font-family: "Times New Roman", Times, serif;
   color: #111;
   font-style: italic;
-  
 }
 
 .container > p:first-of-type {
   text-indent: 2em;
 }
 
-.container > p:last-child {
-  margin-bottom: 3em;
+.container > p:first-child {
+  margin-top: 3em;
 }
 
 audio {
   width: calc(50% - 2em);
   left: 2em;
-  bottom: 4em;
+  top: 4em;
   position: fixed;
   transform-origin: left;
   scale: 200%;
+  z-index: 1;
+
+  opacity: 0;
+  /* visibility: hidden; */
 }
 
 audio::-webkit-media-controls-enclosure {
@@ -41,4 +49,57 @@ audio::-webkit-media-controls-enclosure {
 
 b {
   color: #c65900;
+}
+
+#cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #fff5e9;
+  transition: opacity 1s ease-out, filter 1s ease-out, transform 1s ease-in;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#cover.clicked {
+  opacity: 0;
+  filter: blur(4em);
+  transform: rotate(45deg);
+}
+
+#cover > .rune {
+  width: calc(100% - 4em);
+  mix-blend-mode: multiply;
+}
+
+#cover > .fingerprint {
+  position: absolute;
+  scale: 50%;
+  animation: pulse 2s infinite;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease-in, visibility 0ms ease-in 0ms;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.95);
+  }
 }
