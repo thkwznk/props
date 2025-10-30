@@ -4,11 +4,13 @@ var cover = document.getElementById("cover");
 var fingerprint = document.getElementById("fingerprint");
 
 fingerprint.addEventListener("click", (event) => {
-  audio.classList.add("show");
+  if (audio) {
+    audio.classList.add("show");
+    setTimeout(() => {
+      audio.play();
+    }, 1600);
+  }
+
   content.classList.add("show");
   cover.classList.add("clicked");
-
-  setTimeout(() => {
-    audio.play();
-  }, 1600);
 });
