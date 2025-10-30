@@ -119,8 +119,10 @@ b {
 
 .secret-container > p {
   font-size: 50em;
-  font-family: math;
-  transform: rotate(-5deg);
+  font-family: "Jim Nightshade";
+  font-weight: 400;
+  font-style: normal;
+
   color: #fff;
   text-shadow: #c65900 0 0 0.05em, #c65900 0 0 0.05em, #c65900 0 0 0.05em,
     #c65900 0 0 0.05em, #c65900 0 0 0.1em, #c65900 0 0 0.2em, #c65900 0 0 0.5em,
