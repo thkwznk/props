@@ -76,6 +76,8 @@ b {
 #cover > .rune {
   width: calc(100% - 4em);
   mix-blend-mode: multiply;
+  box-shadow: 0 0 20em #c65900;
+  border-radius: 50em;
 }
 
 #cover > .fingerprint {
