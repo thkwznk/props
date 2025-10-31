@@ -136,3 +136,11 @@ b {
   visibility: visible;
   transition: opacity 1s ease-in, visibility 0ms ease-in 0ms;
 }
+
+.archive {
+  width: 80vw;
+  marging: 1em;
+  background-color: white;
+  box-shadow: 10px 5px 5px black;
+  
+}
